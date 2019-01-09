@@ -1,0 +1,43 @@
+.header_front{
+  background-image: url("/theme/img/background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  .groupeBlocs{
+    display: flex;
+    padding-top: 3.5rem;
+  }
+  .blocLogoSite{
+    img{
+      max-width: 4.5rem;
+    }
+  }
+  .blocMenu{
+    margin-left: auto;
+    ul{
+      padding: 0;
+      list-style: none;
+    }
+    ul ul{
+      display: none;
+    }
+    > div > ul{
+      display: flex;
+      > li{
+        margin: 0 3.5rem;
+        > a{//liens nv 1
+          color: $white;
+          font-size: 2rem;
+          text-decoration: none;
+          text-transform: uppercase;
+          text-shadow: -3px 3px 4px #7d7c7c;
+        }
+      }
+    }
+  }
+}
+
+#burger{
+  @include respond-to("medium-up"){
+    display: none;
+  }
+}

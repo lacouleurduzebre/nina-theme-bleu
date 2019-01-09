@@ -1,0 +1,41 @@
+footer{
+  background: linear-gradient(119.73deg, #3A8BEC 2.39%, #075EC7 100.37%);
+  color: $white;
+  padding: 3.5rem 1rem 10rem;
+  a{
+    color: $white;
+  }
+  .groupeBlocs{
+    max-width: 120rem;
+    margin: auto;
+  }
+  .blocMenu{
+    ul{
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      list-style: none;
+    }
+  }
+}
+
+.cookies{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: $color-brand;
+  color: $white;
+  font-weight: $weight-light;
+  text-align: center;
+  width: 100%;
+  padding: 2.5rem 1rem;
+  font-size: 1.3rem;
+  body.notFull &{
+    left: 30rem;
+    width: calc(100% - 30rem);
+  }
+  a{
+    font-weight: $weight-bold;
+    color: $white;
+  }
+}
